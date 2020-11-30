@@ -1,0 +1,38 @@
+Attaching file ../output_files/debug/UCL/debug_nominal_truthlabel.root as _file0...
+tracks from PileUp:     1617
+tracks from FAKE:       3247
+tracks from FAKE_b/c:   4962
+tracks from GEANT:      19543
+tracks from FRAG:       45385
+tracks from B/C:        26868
+Total number of tracks: 101622
+root [1] .L ../plots/heat/heatmap.cpp 
+root [2] jetpT_heat("trk_pT_jet_DR_B",_file0)
+2000    200
+82305 (0.989278)        892 (0.0107215)
+
+Attaching file ../output_files/debug/UCL/debug_2xnominal_truthlabel.root as _file0...
+tracks from PileUp:     2238
+tracks from FAKE:       3639
+tracks from FAKE_b/c:   5181
+tracks from GEANT:      22580
+tracks from FRAG:       57931
+tracks from B/C:        27821
+Total number of tracks: 119390
+root [2] .L ../plots/heat/heatmap.cpp 
+root [3] jetpT_heat("trk_pT_jet_DR_B",_file0)
+2000    200
+82306 (0.844441)        15162 (0.155559)
+
+15162 more tracks (~ 15% increment) of which:
+
+tracks from PileUp:     621
+tracks from FAKE:       392
+tracks from FAKE_b/c:   219
+tracks from GEANT:      3037
+tracks from FRAG:       12546
+tracks from B/C:        953
+Total number of new tracks: 17768
+
+
+
