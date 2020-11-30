@@ -1,0 +1,456 @@
+Jet Collection: bTag_AntiKtVR30Rmax4Rmin02TrackGhostTagJets
+
+DISCRIMINANTS
+
+
+TRUTH LEVEL COMPOSITION
+# of jets: 83614 of which:
+b jets: 17589, c jets: 21683, light jets: 61503
+B-C overlap: 17161 (97.5667 %)
+
+B-C JET CUTS
+20 < Jet pT [GeV] < 10000
+Jet JVT > 0.2 (for jet pT in [20, 60] GeV, |eta| < 2.4)
+Jet |eta| < 2.5, OverlapRemoval (e+-/mu+-), NOT isBad
+ CutFlow: passing PtMin           35129
+ CutFlow: passing PtMax           35125
+ CutFlow: passing Eta Range       35125
+ CutFlow: passing BadMedium       35125
+ CutFlow: passing OR              32497
+ CutFlow: passing ORmu            29231
+ CutFlow: passing JVT             29231
+
+# of jets: 29231 of which:
+b jets: 12849, c jets: 15099, light jets: 13843
+B-C overlap: 12560 (97.7508 %)
+
+B-C HADRONS CUTS
+b-c Hadr pT > 5 GeV
+b-c Hadr DR < 0.3
+
+b jets: 12849, c jets: 2539, light jets 13843
+B-C overlap: 0 (0 %)
+
+TRACK/CHILDREN CUTS
+pT > 0.4 GeV
+|eta| < 2.4
+|d0| < 50 mm
+|z0*sin(theta)| < 50 mm
+
+(JF_ntrk, SV1_ntrk, SV0_ntrk, IP2D_ntrk, IP3D_ntrk)
+0,      48782,  0,      85988,  85988
+Number of jets: 12849   Cut b-jets: 12849
+Number of total Input tracks from SV1: 139863.  Number of SV1 input jets: 12845
+output SV1 jets: 10509 (81.7885 %)
+output IPxD jets: 12810 (99.6965 %)
+output JF jets: 0 (0 %)
+
+ORIGIN SELECTION
+
+tracks from BC:         55199   (25.847 %)
+tracks from PU:         111260  (52.097 %)
+tracks from FRAG:       40337   (18.888 %)
+tracks from GEANT:      6767    (3.169 %)
+Total number of tracks: 213563
+
+matches:                55199   (55199)
+
+average efficiency:     0.750
+
+DERIVED ORIGIN SELECTION
+
+tracks from PileUp:     135335
+tracks from FAKE:       1459
+tracks from FAKE_b/c:   1870
+tracks from GEANT:      6893
+tracks from FRAG:       39746
+tracks from B/C:        56819
+Total number of tracks: 242122
+
+matches:                58689
+
+average efficiency:     0.798
+
+GEOMETRICAL SELECTION ALGORITHM - NO CUT
+
+number of children:     73560
+matches:                61738   (61738)
+no matches:             11822
+single matches:         51800   (83.903 %)
+double matches:         8499    (13.766 %)
+triple+ matches:        1439    (2.331 %)
+
+average efficiency:     0.839
+
+ORIGIN/GEOMETRIC OVERLAP
+
+origin-geometric overlap:       54852   (54852)
+overlap/origin_matches:         0.994
+overlap/geometric_matches:      0.888
+origin - not-geometry: 347
+geometry - not-origin: 6886
+geometry - not-origin from PU: 1781     (25.864 %)
+geometry - not-origin from Frag: 832    (12.082 %)
+geometry - not-origin from Geant: 4273  (62.053 %)
+
+
+jet_orig("Bjet_cut_origin_truth_label_pT",_file0,50,150)
+
+trk in [0,50] Gev jet pT
+origin: 0       0.258012
+origin: 1       0.00905699
+origin: 2       0.0116805
+origin: 3       0.0399457
+origin: 4       0.260148
+origin: 5       0.421157
+trk in [50,100] Gev jet pT
+origin: 0       0.21233
+origin: 1       0.0097531
+origin: 2       0.0102566
+origin: 3       0.0361778
+origin: 4       0.326141
+origin: 5       0.405341
+trk in [100,150] Gev jet pT
+origin: 0       0.154935
+origin: 1       0.0088144
+origin: 2       0.0147734
+origin: 3       0.0321539
+origin: 4       0.348603
+origin: 5       0.44072
+
+avtrk_orig("Bjet_cut_origin_truth_label_pT","pT_B",_file0,50,150)
+0.5
+500, 150, 3
+500, 1000, 3
+
+trk in [0,50] Gev jet pT
+origin: 1       2.49694         +- 0.000190985
+origin: 2       0.0876499       +- 0.000116401
+origin: 3       0.113039        +- 0.000113162
+origin: 4       0.386578        +- 7.82625e-05
+origin: 5       2.51761         +- 0.000193622
+origin: 6       4.07578         +- 0.00039242
+trk in [50,100] Gev jet pT
+origin: 1       2.7058          +- 0.00040537
+origin: 2       0.124287        +- 0.000208107
+origin: 3       0.130703        +- 0.000206582
+origin: 4       0.461027        +- 0.000128083
+origin: 5       4.15613         +- 0.000750031
+origin: 6       5.1654          +- 0.000989876
+trk in [100,150] Gev jet pT
+origin: 1       1.96226         +- 0.00151299
+origin: 2       0.111635        +- 0.0013968
+origin: 3       0.187107        +- 0.00127813
+origin: 4       0.407233        +- 0.000932024
+origin: 5       4.41509         +- 0.00536965
+origin: 6       5.58176         +- 0.00720403
+
+jet_orig("Cjet_cut_origin_truth_label_pT",_file0,50,150)
+
+trk in [0,50] Gev jet pT
+origin: 0       0.28093
+origin: 1       0.0144102
+origin: 2       0.00706786
+origin: 3       0.0408976
+origin: 4       0.40774
+origin: 5       0.248954
+trk in [50,100] Gev jet pT
+origin: 0       0.233179
+origin: 1       0.0145959
+origin: 2       0.00498398
+origin: 3       0.0337012
+origin: 4       0.47953
+origin: 5       0.23401
+trk in [100,150] Gev jet pT
+origin: 0       0.150815
+origin: 1       0.0129076
+origin: 2       0.00679348
+origin: 3       0.044837
+origin: 4       0.546875
+origin: 5       0.237772 
+
+avtrk_orig("Cjet_cut_origin_truth_label_pT","pT_C",_file0,50,150)
+0.5
+500, 150, 3
+500, 1000, 3
+
+trk in [0,50] Gev jet pT
+origin: 1       2.48573         +- 0.000902084
+origin: 2       0.127505        +- 0.000529748
+origin: 3       0.0625379       +- 0.000569194
+origin: 4       0.36187         +- 0.00038745
+origin: 5       3.60777         +- 0.00158335
+origin: 6       2.20279         +- 0.000730293
+trk in [50,100] Gev jet pT
+origin: 1       2.73677         +- 0.0024189
+origin: 2       0.171309        +- 0.00115417
+origin: 3       0.0584958       +- 0.00131129
+origin: 4       0.395543        +- 0.000841862
+origin: 5       5.62813         +- 0.00644587
+origin: 6       2.74652         +- 0.00243248
+trk in [100,150] Gev jet pT
+origin: 1       1.7619          +- 0.00604686
+origin: 2       0.150794        +- 0.00673973
+origin: 3       0.0793651       +- 0.00730663
+origin: 4       0.52381         +- 0.00377929
+origin: 5       6.38889         +- 0.042769
+origin: 6       2.77778         +- 0.0141093
+
+jet_orig("ljet_cut_origin_truth_label_pT",_file0,50,150)
+
+trk in [0,50] Gev jet pT
+origin: 0       0.305013
+origin: 1       0.0192626
+origin: 2       0.000211814
+origin: 3       0.037516
+origin: 4       0.633549
+origin: 5       0.0044481
+trk in [50,100] Gev jet pT
+origin: 0       0.257177
+origin: 1       0.0206332
+origin: 2       0.000105541
+origin: 3       0.0375462
+origin: 4       0.680237
+origin: 5       0.00430079
+trk in [100,150] Gev jet pT
+origin: 0       0.189587
+origin: 1       0.0222222
+origin: 2       0
+origin: 3       0.0369524
+origin: 4       0.74819
+origin: 5       0.00304762
+
+avtrk_orig("ljet_cut_origin_truth_label_pT","pT_l",_file0,50,150)
+0.5
+500, 150, 3
+500, 1000, 3
+
+trk in [0,50] Gev jet pT
+origin: 1       2.59983         +- 0.000169905
+origin: 2       0.164189        +- 8.8765e-05
+origin: 3       0.00180544      +- 0.00010601
+origin: 4       0.319775        +- 7.22414e-05
+origin: 5       5.40017         +- 0.000467308
+origin: 6       0.0379142       +- 0.000102176
+trk in [50,100] Gev jet pT
+origin: 1       2.91739         +- 0.000573897
+origin: 2       0.234062        +- 0.000229254
+origin: 3       0.00119725      +- 0.000298953
+origin: 4       0.42592         +- 0.000171829
+origin: 5       7.71655         +- 0.00201034
+origin: 6       0.0487878       +- 0.000284709
+trk in [100,150] Gev jet pT
+origin: 1       2.08811         +- 0.00152183
+origin: 2       0.244755        +- 0.00105629
+origin: 3       0       +- 0.0013986
+origin: 4       0.406993        +- 0.00082938
+origin: 5       8.24056         +- 0.0101267
+origin: 6       0.0335664       +- 0.00135166
+
+jet_orig("trk_jet_pT_origin_truth_label_IP3D_B",_file0,50,150)
+
+trk in [0,50] Gev jet pT
+origin: 0       0.0380577
+origin: 1       0.00666447
+origin: 2       0.0115532
+origin: 3       0.0247726
+origin: 4       0.321736
+origin: 5       0.597216
+trk in [50,100] Gev jet pT
+origin: 0       0.038165
+origin: 1       0.00762745
+origin: 2       0.00956898
+origin: 3       0.0205802
+origin: 4       0.395657
+origin: 5       0.528402
+trk in [100,150] Gev jet pT
+origin: 0       0.0409423
+origin: 1       0.00666125
+origin: 2       0.0120227
+origin: 3       0.0180341
+origin: 4       0.413485
+origin: 5       0.508855
+
+avtrk_orig("trk_jet_pT_origin_truth_label_IP3D_B","pT_B",_file0,50,150)
+0.5
+500, 150, 3
+500, 1000, 3
+
+trk in [0,50] Gev jet pT
+origin: 1       0.221485        +- 9.93257e-05
+origin: 2       0.0387854       +- 0.000122635
+origin: 3       0.0672365       +- 0.000119005
+origin: 4       0.144169        +- 0.00010919
+origin: 5       1.87242         +- 0.000111306
+origin: 6       3.47563         +- 0.00031585
+trk in [50,100] Gev jet pT
+origin: 1       0.326996        +- 0.000159934
+origin: 2       0.0653517       +- 0.000222112
+origin: 3       0.0819867       +- 0.000218159
+origin: 4       0.176331        +- 0.000195739
+origin: 5       3.38997         +- 0.000567959
+origin: 6       4.52733         +- 0.000838244
+trk in [100,150] Gev jet pT
+origin: 1       0.396226        +- 0.00094933
+origin: 2       0.0644654       +- 0.00147097
+origin: 3       0.116352        +- 0.00138938
+origin: 4       0.174528        +- 0.00129791
+origin: 5       4.00157         +- 0.00471945
+origin: 6       4.92453         +- 0.00617064
+
+eff_derivedtruthlabel_jetpt("IP3D","Bjet_cut_origin_truth_label_pT",_file0,50,150)
+0.5
+
+n_Xbins: 121    n_Ybins: 500    x_min: -1       x_max: 120
+
+Numerator: IP3D_b-jet composition
+
+trk in [0,50] Gev jet pT
+origin: 0       1736
+origin: 1       304
+origin: 2       527
+origin: 3       1130
+origin: 4       14676
+origin: 5       27242
+trk in [50,100] Gev jet pT
+origin: 0       1376
+origin: 1       275
+origin: 2       345
+origin: 3       742
+origin: 4       14265
+origin: 5       19051
+trk in [100,150] Gev jet pT
+origin: 0       252
+origin: 1       41
+origin: 2       74
+origin: 3       111
+origin: 4       2545
+origin: 5       3132
+
+Denominator: Bjet_cut_origin_truth_label_pT
+
+trk in [0,50] Gev jet pT
+origin: 0       19571   (0.0887027      +- 4.65637e-05)
+origin: 1       687     (0.442504       +- 0.000811494)
+origin: 2       886     (0.594808       +- 0.000457327)
+origin: 3       3030    (0.372937       +- 0.000206951)
+origin: 4       19733   (0.743729       +- 1.29869e-05)
+origin: 5       31946   (0.852752       +- 4.60929e-06)
+trk in [50,100] Gev jet pT
+origin: 0       11386   (0.12085        +- 7.72132e-05)
+origin: 1       523     (0.525813       +- 0.000906668)
+origin: 2       550     (0.627273       +- 0.000677686)
+origin: 3       1940    (0.382474       +- 0.000318312)
+origin: 4       17489   (0.815656       +- 1.05406e-05)
+origin: 5       21736   (0.876472       +- 5.6831e-06)
+trk in [100,150] Gev jet pT
+origin: 0       1248    (0.201923       +- 0.000639485)
+origin: 1       71      (0.577465       +- 0.0059512)
+origin: 2       119     (0.621849       +- 0.00317774)
+origin: 3       259     (0.428571       +- 0.00220629)
+origin: 4       2808    (0.906339       +- 3.3355e-05)
+origin: 5       3550    (0.882254       +- 3.3168e-05)
+
+jet_orig("trk_jet_pT_origin_truth_label_SV1_B",_file0,50,150)
+
+trk in [0,50] Gev jet pT
+origin: 0       0.0472223
+origin: 1       0.00179325
+origin: 2       0.0143087
+origin: 3       0.0275713
+origin: 4       0.047185
+origin: 5       0.86192
+trk in [50,100] Gev jet pT
+origin: 0       0.0492641
+origin: 1       0.00237722
+origin: 2       0.0146174
+origin: 3       0.0262506
+origin: 4       0.0549795
+origin: 5       0.852511
+trk in [100,150] Gev jet pT
+origin: 0       0.0474006
+origin: 1       0.0030581
+origin: 2       0.0207951
+origin: 3       0.0214067
+origin: 4       0.0397554
+origin: 5       0.867584 
+
+avtrk_orig("trk_jet_pT_origin_truth_label_SV1_B","pT_B",_file0,50,150)
+0.5
+500, 150, 3
+500, 1000, 3
+
+trk in [0,50] Gev jet pT
+origin: 1       0.161266        +- 0.000107009
+origin: 2       0.00612401      +- 0.000126802
+origin: 3       0.0488645       +- 0.000121349
+origin: 4       0.0941567       +- 0.000115571
+origin: 5       0.161138        +- 0.000107025
+origin: 6       2.94348         +- 0.000247956
+trk in [50,100] Gev jet pT
+origin: 1       0.231464        +- 0.000182637
+origin: 2       0.0111692       +- 0.000234988
+origin: 3       0.0686787       +- 0.000221322
+origin: 4       0.123337        +- 0.000208333
+origin: 5       0.258317        +- 0.000176255
+origin: 6       4.00547         +- 0.000714227
+trk in [100,150] Gev jet pT
+origin: 1       0.243711        +- 0.00118913
+origin: 2       0.0157233       +- 0.0015476
+origin: 3       0.106918        +- 0.00140422
+origin: 4       0.110063        +- 0.00139927
+origin: 5       0.204403        +- 0.00125094
+origin: 6       4.46069         +- 0.00544134
+
+eff_derivedtruthlabel_jetpt("SV1","Bjet_cut_origin_truth_label_pT",_file0,50,150)
+0.5
+
+n_Xbins: 121    n_Ybins: 500    x_min: -1       x_max: 120
+
+Numerator: SV1_b-jet composition
+
+trk in [0,50] Gev jet pT
+origin: 0       1264
+origin: 1       48
+origin: 2       383
+origin: 3       738
+origin: 4       1263
+origin: 5       23071
+trk in [50,100] Gev jet pT
+origin: 0       974
+origin: 1       47
+origin: 2       289
+origin: 3       519
+origin: 4       1087
+origin: 5       16855
+trk in [100,150] Gev jet pT
+origin: 0       155
+origin: 1       10
+origin: 2       68
+origin: 3       70
+origin: 4       130
+origin: 5       2837
+
+Denominator: Bjet_cut_origin_truth_label_pT
+
+trk in [0,50] Gev jet pT
+origin: 0       19571   (0.0645854      +- 4.7796e-05)
+origin: 1       687     (0.069869       +- 0.0013539)
+origin: 2       886     (0.43228        +- 0.000640768)
+origin: 3       3030    (0.243564       +- 0.000249649)
+origin: 4       19733   (0.0640045      +- 4.7433e-05)
+origin: 5       31946   (0.722187       +- 8.69632e-06)
+trk in [50,100] Gev jet pT
+origin: 0       11386   (0.0855437      +- 8.03141e-05)
+origin: 1       523     (0.0898662      +- 0.00174022)
+origin: 2       550     (0.525455       +- 0.00086281)
+origin: 3       1940    (0.267526       +- 0.000377564)
+origin: 4       17489   (0.0621534      +- 5.36249e-05)
+origin: 5       21736   (0.775442       +- 1.03312e-05)
+trk in [100,150] Gev jet pT
+origin: 0       1248    (0.124199       +- 0.000701764)
+origin: 1       71      (0.140845       +- 0.0121008)
+origin: 2       119     (0.571429       +- 0.00360144)
+origin: 3       259     (0.27027        +- 0.00281749)
+origin: 4       2808    (0.0462963      +- 0.000339638)
+origin: 5       3550    (0.799155       +- 5.65761e-05)
